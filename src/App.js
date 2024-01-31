@@ -3,7 +3,7 @@ import FuncComp from "./Components/FuncComp"; //imported 'FuncComp.js'component
 import ClassComp from "./Components/ClassComp";
 import WithJSX from "./Components/WithJSX";
 import WithoutJSX from "./Components/WithoutJSX";
-import Car from "./Components/Props01";
+import Props01 from "./Components/Props01";
 import CarGarage from "./Components/Props02";
 import Message from "./Components/State02";
 import Counter from "./Components/State01";
@@ -25,14 +25,14 @@ function App() {
       <ClassComp />
       <WithJSX />
       <WithoutJSX />
-      <Car name="Merc" model="Mustang">
+      <Props01 name="Merc" model="Mustang">
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem
           corporis odio reiciendis. Numquam illum nulla dolor, excepturi
           voluptate expedita enim!
         </p>
-      </Car>
-      <Car name="BMW" model="Gran Coupe" /> {/* props used as an attribute */}
+      </Props01>
+      <Props01 name="BMW" model="Gran Coupe" /> {/* props used as an attribute */}
       {/*<CarGarage color ="red"/>
       <Message/>
       <Counter/>

@@ -5,7 +5,7 @@ import React from "react";
  */
 
 /*by default we use props keyword but we can use any word */
-function Car(props) {
+function props01(props) {
   //props used as an argument
   return (
     /* round braces are required to write HTML in multiple lines while using JSX */
@@ -20,4 +20,4 @@ function Car(props) {
   );
 }
 
-export default Car;
+export default props01;
