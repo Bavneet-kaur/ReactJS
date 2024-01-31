@@ -11,14 +11,17 @@ import FuncClick from "./Components/FuncClick";
 import ClassClick from "./Components/ClassClick";
 import EventBind from "./Components/EventBind";
 import ParentComp from "./Components/ParentComp";
+import CondClass from "./Components/CondClass.js";
+import List01 from "./Components/List01.js";
+import List02 from "./Components/List02.js";
 
 function App() {
   return (
     <div className="App">
-      <h1>BAVNEET KAUR</h1>
+      {/* <h1>BAVNEET KAUR</h1> */}
       {/* to use the function 'FunComp' we simply call it by self closing html tag
       (if there is no content between them)*/}
-      <FuncComp name = "Destructing" control = "self"/>
+      {/* <FuncComp name = "Destructing" control = "self"/>
       <ClassComp />
       <WithJSX />
       <WithoutJSX />
@@ -30,13 +33,16 @@ function App() {
         </p>
       </Car>
       <Car name="BMW" model="Gran Coupe" /> {/* props used as an attribute */}
-      <CarGarage color ="red"/>
+      {/*<CarGarage color ="red"/>
       <Message/>
       <Counter/>
       <FuncClick/>
       <ClassClick/>
       <EventBind/>
       <ParentComp/>
+      <CondClass/> */}
+      <List01/>
+      <List02/>
     </div>
   );
 }
