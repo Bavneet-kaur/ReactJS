@@ -15,12 +15,11 @@ import CondClass from "./Components/CondClass.js";
 import List01 from "./Components/List01.js";
 import List02 from "./Components/List02.js";
 import Stylesheets from "./Components/Stylesheets.js";
+import Forms from "./Components/Forms.js";
 
 function App() {
   return (
     <div className="App">
-      <Stylesheets primary = {false}/> {/**o/p will be in 'black' */}
-      {/**<Stylesheets primary = {true}/>*/} {/**o/p will be in 'orange' */}
       {/* <h1>BAVNEET KAUR</h1> */}
       {/* to use the function 'FunComp' we simply call it by self closing html tag
       (if there is no content between them)*/}
@@ -46,6 +45,9 @@ function App() {
       <CondClass/> */}
       {/* <List01/>
       <List02/> */}
+      {/*<Stylesheets primary = {false}/>*/} {/**o/p will be in 'black' */}
+      {/**<Stylesheets primary = {true}/>*/} {/**o/p will be in 'orange' */}
+      <Forms />
     </div>
   );
 }
