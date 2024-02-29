@@ -16,9 +16,11 @@ import "./App.css";
 // import List02 from "./Components/List02.js";
 // import Stylesheets from "./Components/Stylesheets.js";
 // import Forms from "./Components/Forms.js";
-import Mount01 from "./LCMethods/Mount01.js";
-import Update from "./LCMethods/Update01.js";
-
+// import Mount01 from "./LCMethods/Mount01.js";
+// import Update from "./LCMethods/Update01.js";
+// import Fragments from "./Components/Fragments";
+// import FragmentTable from "./Components/FragmentTable";
+// import PRComp from "./Components/PRComp";
 function App() {
   return (
     <div className="App">
@@ -50,10 +52,13 @@ function App() {
       {/*<Stylesheets primary = {false}/>*/} {/**o/p will be in 'black' */}
       {/**<Stylesheets primary = {true}/>*/} {/**o/p will be in 'orange' */}
       {/* <Forms /> */}
-      <div className="lifecycle">
+      {/* <div className="lifecycle">
         <Mount01/>
         <Update/>
-      </div>
+      </div> */}
+      {/* <Fragments/>
+      <FragmentTable/> */}
+      {/* <PRComp/> */}
     </div>
   );
 }
