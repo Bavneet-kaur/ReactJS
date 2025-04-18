@@ -1,6 +1,7 @@
 import React from 'react'
 import ProfileCard from './components/profileCard'
 import ProductCard from './components/productCard'
+import Counter from './components/counter'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           discountprice={16995}
         />
       </div>
+      <Counter/>
     </>
   )
 }

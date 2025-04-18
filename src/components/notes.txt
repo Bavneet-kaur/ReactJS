@@ -5,3 +5,8 @@ Think of it like a Lego brick—you can build complex UIs by stacking small, man
 
 >> Props (short for properties) let you pass data from a parent component to a child component.
 Think of it like this:Your component 1(productCard) is a template. Props let you fill in the blanks dynamically. ~productCard
+
+>>state is a way to store and manage data within a component. Unlike props (which are passed from parent to child), 
+state is managed within a component and can change over time, causing the component to re-render when the state changes. 
+State updates are asynchronous, meaning React doesn’t immediately apply the changes but schedules them for later. 
+This is why you should not rely on the immediate value of the state after calling setState. ~counter
