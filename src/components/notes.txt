@@ -2,3 +2,6 @@
 
 >>In React, a component is a reusable piece of UI. 
 Think of it like a Lego brick—you can build complex UIs by stacking small, manageable pieces. ~profileCard 
+
+>> Props (short for properties) let you pass data from a parent component to a child component.
+Think of it like this:Your component 1(productCard) is a template. Props let you fill in the blanks dynamically. ~productCard
