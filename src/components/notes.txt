@@ -1,0 +1,4 @@
+>> Fragments are only needed if you return multiple sibling elements
+
+>>In React, a component is a reusable piece of UI. 
+Think of it like a Lego brick—you can build complex UIs by stacking small, manageable pieces. ~profileCard 
