@@ -5,6 +5,7 @@ import Counter from './components/counter'
 import Likes from './components/likes'
 import Status from './components/status'
 import Toggle from './components/toggle'
+import ProductList from './components/productList'
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
       <Status status="inactive" />
       <Status status="banned" />
       <Toggle />
+      <ProductList/>
     </>
   )
 }
