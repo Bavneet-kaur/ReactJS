@@ -3,6 +3,8 @@ import ProfileCard from './components/profileCard'
 import ProductCard from './components/productCard'
 import Counter from './components/counter'
 import Likes from './components/likes'
+import Status from './components/status'
+import Toggle from './components/toggle'
 
 function App() {
   return (
@@ -24,8 +26,12 @@ function App() {
           discountprice={16995}
         />
       </div>
-      <Counter/>
-   <Likes/>
+      <Counter />
+      <Likes />
+      <Status status="active" />
+      <Status status="inactive" />
+      <Status status="banned" />
+      <Toggle />
     </>
   )
 }
