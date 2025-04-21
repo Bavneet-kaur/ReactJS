@@ -2,6 +2,7 @@ import React from 'react'
 import ProfileCard from './components/profileCard'
 import ProductCard from './components/productCard'
 import Counter from './components/counter'
+import Likes from './components/likes'
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         />
       </div>
       <Counter/>
+   <Likes/>
     </>
   )
 }
