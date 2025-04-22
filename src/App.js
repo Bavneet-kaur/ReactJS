@@ -7,6 +7,7 @@ import Status from './components/status'
 import Toggle from './components/toggle'
 import ProductList from './components/productList'
 import Child from './components/child'
+import Form from './components/form'
 
 function App() {
   const [message, setMessage] = useState("Hello 👋");
@@ -44,6 +45,7 @@ function App() {
         <h1>{message}</h1>
         <Child handleClick={updateMessage} />
       </div>
+      <Form/>
     </>
   )
 }
