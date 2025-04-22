@@ -15,8 +15,9 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Home from './pages/Home'
+import ParentComponent from './components/parent'
 
-function App() {
+function App({value}) {
   const [message, setMessage] = useState("Hello 👋");
 
   const updateMessage = () => {
@@ -59,7 +60,7 @@ function App() {
       <BrowserRouter>
         <div className="p-6">
           <h1 className="text-2xl font-bold mb-4">React Router Example</h1>
-
+        <ParentComponent/>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />

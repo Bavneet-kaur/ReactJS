@@ -26,3 +26,7 @@ When you change the order of list items, React uses keys to re-render only the a
 >>conditional rendering ~loginToggle
 
 >>React routing ~pages, routing
+
+>>lifting state up - share state between components by lifting it up to their common parent.
+If two sibling components need to access or modify the same state, you move that state up into their 
+common ancestor component, and pass it down via props. ~input, display, parent
