@@ -8,6 +8,8 @@ import Toggle from './components/toggle'
 import ProductList from './components/productList'
 import Child from './components/child'
 import Form from './components/form'
+import Users from './components/user'
+import TodoList from './components/todo'
 
 function App() {
   const [message, setMessage] = useState("Hello 👋");
@@ -46,6 +48,8 @@ function App() {
         <Child handleClick={updateMessage} />
       </div>
       <Form/>
+      <Users/>
+      <TodoList/>
     </>
   )
 }
