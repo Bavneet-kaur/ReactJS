@@ -16,13 +16,14 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import Home from './pages/Home'
 import ParentComponent from './components/parent'
+import ThemeToggle from './components/themeToggle'
+import ThemeContext from './components/theme'
 
-function App({value}) {
-  const [message, setMessage] = useState("Hello 👋");
 
-  const updateMessage = () => {
-    setMessage("You clicked the button! 🎉");
-  };
+function App({ value }) {
+
+  const [theme, setTheme] = useState("light");
+
   return (
     <>
       {/* <ProfileCard />
@@ -58,15 +59,22 @@ function App({value}) {
       <TodoList />
       <LoginStatus /> */}
       <BrowserRouter>
-        <div className="p-6">
-          <h1 className="text-2xl font-bold mb-4">React Router Example</h1>
-        <ParentComponent/>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        </div>
+        <ThemeContext.Provider value={{ theme, setTheme }}>
+          <div className={`p-4 ${theme === "dark" ? "bg-black text-white" : "bg-white text-black"}`}>
+            <h1 className="text-2xl mb-4">Context API Example</h1>
+            <ThemeToggle/>
+            <div className="p-6">
+              <h1 className="text-2xl font-bold mb-4">React Router Example</h1>
+              <ParentComponent />
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/contact" element={<Contact />} />
+              </Routes>
+            </div>
+          </div>
+        </ThemeContext.Provider>
+
       </BrowserRouter>
     </>
   )

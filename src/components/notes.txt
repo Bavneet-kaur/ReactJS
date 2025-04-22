@@ -30,3 +30,15 @@ When you change the order of list items, React uses keys to re-render only the a
 >>lifting state up - share state between components by lifting it up to their common parent.
 If two sibling components need to access or modify the same state, you move that state up into their 
 common ancestor component, and pass it down via props. ~input, display, parent
+
+>>React Context API is a feature that allows sharing data between components without explicitly passing props through each 
+level of the component tree. It offers a way to create "global" variables accessible by any component within the application. 
+It is especially useful for managing states and avoiding "prop drilling," where props are passed down multiple levels of components. 
+
+The Context API revolves around three main parts:
+1. createContext: This function creates a context object. It can accept a default value, which is used if a component attempts to access 
+the context without a matching provider.
+2.Provider: This component makes the context value available to all its descendant components. It takes a value prop, which represents the 
+data to be shared.
+3.useContext: This hook consumes the context value within a functional component. It takes the context object as an argument and 
+returns the current context value.
