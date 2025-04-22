@@ -11,6 +11,10 @@ import Form from './components/form'
 import Users from './components/user'
 import TodoList from './components/todo'
 import LoginStatus from './components/loginToggle'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import About from './pages/About'
+import Contact from './pages/Contact'
+import Home from './pages/Home'
 
 function App() {
   const [message, setMessage] = useState("Hello 👋");
@@ -44,14 +48,25 @@ function App() {
       <Status status="banned" />
       <Toggle />
       <ProductList/> */}
-      <div className="p-6  inline-flex items-center">
+      {/* <div className="p-6  inline-flex items-center">
         <h1>{message}</h1>
         <Child handleClick={updateMessage} />
       </div>
-      <Form/>
-      <Users/>
-      <TodoList/>
-      <LoginStatus/>
+      <Form />
+      <Users />
+      <TodoList />
+      <LoginStatus /> */}
+      <BrowserRouter>
+        <div className="p-6">
+          <h1 className="text-2xl font-bold mb-4">React Router Example</h1>
+
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </div>
+      </BrowserRouter>
     </>
   )
 }

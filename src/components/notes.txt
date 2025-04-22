@@ -24,3 +24,5 @@ Don’t use array index as key when items can change dynamically (for performanc
 When you change the order of list items, React uses keys to re-render only the affected items, which saves time. ~Users, Todo
 
 >>conditional rendering ~loginToggle
+
+>>React routing ~pages, routing
