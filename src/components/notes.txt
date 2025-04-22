@@ -22,3 +22,5 @@ event system, which provides consistent behavior across different browsers. ~lik
 >>list[array] & Keys should be unique within the array. It can be any unique identifier.
 Don’t use array index as key when items can change dynamically (for performance reasons).
 When you change the order of list items, React uses keys to re-render only the affected items, which saves time. ~Users, Todo
+
+>>conditional rendering ~loginToggle

@@ -10,6 +10,7 @@ import Child from './components/child'
 import Form from './components/form'
 import Users from './components/user'
 import TodoList from './components/todo'
+import LoginStatus from './components/loginToggle'
 
 function App() {
   const [message, setMessage] = useState("Hello 👋");
@@ -50,6 +51,7 @@ function App() {
       <Form/>
       <Users/>
       <TodoList/>
+      <LoginStatus/>
     </>
   )
 }
