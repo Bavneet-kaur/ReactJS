@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ProfileCard from './components/profileCard'
 import ProductCard from './components/productCard'
 import Counter from './components/counter'
@@ -6,11 +6,17 @@ import Likes from './components/likes'
 import Status from './components/status'
 import Toggle from './components/toggle'
 import ProductList from './components/productList'
+import Child from './components/child'
 
 function App() {
+  const [message, setMessage] = useState("Hello 👋");
+
+  const updateMessage = () => {
+    setMessage("You clicked the button! 🎉");
+  };
   return (
     <>
-      <ProfileCard />
+      {/* <ProfileCard />
       <div className="flex flex-wrap gap-2">
         <ProductCard
           image="https://redtape.com/cdn/shop/files/RSO4034_1_40cd841c-11dc-4c78-ab85-bfad034e31fe.jpg?v=1741350219"
@@ -33,7 +39,11 @@ function App() {
       <Status status="inactive" />
       <Status status="banned" />
       <Toggle />
-      <ProductList/>
+      <ProductList/> */}
+      <div className="p-6  inline-flex items-center">
+        <h1>{message}</h1>
+        <Child handleClick={updateMessage} />
+      </div>
     </>
   )
 }

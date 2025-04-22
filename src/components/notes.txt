@@ -14,3 +14,5 @@ This is why you should not rely on the immediate value of the state after callin
 >>Event handling in React refers to how React components react to and manage user interactions, such as clicks, form submissions, 
 and mouse movements. It's a crucial aspect of building interactive and dynamic user interfaces. React implements a synthetic 
 event system, which provides consistent behavior across different browsers. ~likes
+
+passing the function to the child component ~ child
