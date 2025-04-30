@@ -18,6 +18,7 @@ import Home from './pages/Home'
 import ParentComponent from './components/parent'
 import ThemeToggle from './components/themeToggle'
 import ThemeContext from './components/theme'
+import Effect from './components/effect'
 
 
 function App({ value }) {
@@ -58,7 +59,8 @@ function App({ value }) {
       <Users />
       <TodoList />
       <LoginStatus /> */}
-      <BrowserRouter>
+      <Effect/>
+      {/* <BrowserRouter>
         <ThemeContext.Provider value={{ theme, setTheme }}>
           <div className={`p-4 ${theme === "dark" ? "bg-black text-white" : "bg-white text-black"}`}>
             <h1 className="text-2xl mb-4">Context API Example</h1>
@@ -75,7 +77,7 @@ function App({ value }) {
           </div>
         </ThemeContext.Provider>
 
-      </BrowserRouter>
+      </BrowserRouter> */}
     </>
   )
 }

@@ -41,4 +41,23 @@ the context without a matching provider.
 2.Provider: This component makes the context value available to all its descendant components. It takes a value prop, which represents the 
 data to be shared.
 3.useContext: This hook consumes the context value within a functional component. It takes the context object as an argument and 
-returns the current context value.
+returns the current context value. ~theme,themeToggle
+
+>>Hooks allow function components to have access to state and other React features. Because of this, class components are generally no 
+longer needed.
+
+There are 3 rules for hooks:
+1.Hooks can only be called inside React function components.
+2.Hooks can only be called at the top level of a component.
+3.Hooks cannot be conditional
+
+>>The useEffect Hook allows you to perform side effects in your components.
+Some examples of side effects are: fetching data, directly updating the DOM, and timers.
+useEffect accepts two arguments. The second argument is optional.
+useEffect(<function>, <dependency>)
+The second argument (empty array [] here) defines dependencies. 
+If it’s empty, useEffect runs only once (similar to componentDidMount in class components).
+If you want it to run whenever a specific variable changes, you can pass that variable(state & props) inside the array
+Some effects require cleanup to reduce memory leaks.
+Timeouts, subscriptions, event listeners, and other effects that are no longer needed should be disposed.
+We do this by including a return function at the end of the useEffect Hook. ~effect
