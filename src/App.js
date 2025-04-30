@@ -19,6 +19,7 @@ import ParentComponent from './components/parent'
 import ThemeToggle from './components/themeToggle'
 import ThemeContext from './components/theme'
 import Effect from './components/effect'
+import Reduce from './components/reducer'
 
 
 function App({ value }) {
@@ -60,6 +61,7 @@ function App({ value }) {
       <TodoList />
       <LoginStatus /> */}
       <Effect/>
+      <Reduce/>
       {/* <BrowserRouter>
         <ThemeContext.Provider value={{ theme, setTheme }}>
           <div className={`p-4 ${theme === "dark" ? "bg-black text-white" : "bg-white text-black"}`}>

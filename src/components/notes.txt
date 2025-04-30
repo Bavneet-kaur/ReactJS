@@ -68,3 +68,5 @@ requires access to the state.
 To illustrate, we have many nested components. The component at the top and bottom of the stack need access to the state.
 To do this without Context, we will need to pass the state as "props" through each nested component. This is called "prop drilling". ~themeToggle
 
+>>useReducer is a more advanced alternative to useState for managing state. It’s useful when you have more complex state logic
+ or need to update state based on previous values. ~reducer
