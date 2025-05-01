@@ -21,6 +21,7 @@ import ThemeContext from './components/theme'
 import Effect from './components/effect'
 import Reduce from './components/reducer'
 import Refer from './components/ref'
+import Memo from './components/memo'
 
 
 function App({ value }) {
@@ -64,6 +65,7 @@ function App({ value }) {
       <Effect/>
       <Reduce/>
       <Refer/>
+      <Memo/>
       {/* <BrowserRouter>
         <ThemeContext.Provider value={{ theme, setTheme }}>
           <div className={`p-4 ${theme === "dark" ? "bg-black text-white" : "bg-white text-black"}`}>
