@@ -77,3 +77,6 @@ It can be used to access a DOM element directly.useRef() only returns one item. 
 When we initialize useRef we set the initial value: useRef(0) ~ref
 
 >> useMemo Hook can be used to keep expensive, resource intensive functions from needlessly running.
+
+>>useCallback is similar to useMemo, but it’s used to memoize functions instead of values. 
+It ensures that the function reference stays the same between renders, preventing unnecessary re-renders of child components.
