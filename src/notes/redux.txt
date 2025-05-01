@@ -8,3 +8,18 @@ In simple words: 👉 Instead of managing state individually in components, you 
 >>A single object that holds the entire application state.
 Created using createStore() (in older Redux) or configureStore() (in Redux Toolkit).
 
+>>Plain JavaScript objects that describe what happened.
+They must have a type property.
+Can also carry additional data (called payload).
+
+>>Pure functions that take the current state and an action, and return a new state.
+The only way to update state in Redux is by dispatching actions handled by reducers.
+
+>>A function to send actions to the store.
+When you call dispatch(action), Redux sends that action to the reducer to update the state.
+
+>>Functions used to get specific parts of the state from the store.
+Helps keep your components clean and organized.
+
+>>Functions that can intercept actions before they reach the reducer.
+Commonly used for async operations (like API calls) using redux-thunk or redux-saga
